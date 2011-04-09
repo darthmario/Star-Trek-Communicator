@@ -225,7 +225,7 @@ CommunicateAssistant.prototype.deactivate = function(event) {
 	/* remove any event handlers you added in activate and do any other cleanup that should happen before
 	   this scene is popped or another scene is pushed on top */
 	Mojo.Event.stopListening(this.communicateHolder, Mojo.Event.flick, this.flickHandler);
-	this.testSlider.cancel(); // Kills the subscription
+	this.sliderStateSubscribtion.cancel(); // Kills the subscription
 	Mojo.Event.stopListening(this.documentHolder, 'shakestart', this.shakeStartHandler);
  	Mojo.Event.stopListening(this.documentHolder, 'shakeend', this.shakeEndHandler);  
 	Mojo.Event.stopListening(this.buttonCommand, "mousedown", this.buttonPressHandler);
