@@ -1,0 +1,29 @@
+[
+    {"source": "app/models/buttons.js"},
+    {"source": "app/models/characters.js"},
+    {"source": "app/assistants/stage-assistant.js"},
+    {
+        "scenes": "title",
+        "source": "app/assistants/title-assistant.js"
+    },
+    {
+        "scenes": "help",
+        "source": "app/assistants/help-assistant.js"
+    },
+    {
+        "scenes": "communicate",
+        "source": "app/assistants/communicate-assistant.js"
+    },
+    {
+        "scenes": "eliminate",
+        "source": "app/assistants/eliminate-assistant.js"
+    },
+    {
+        "scenes": "investigate",
+        "source": "app/assistants/investigate-assistant.js"
+    },
+    {
+        "scenes": "medicate",
+        "source": "app/assistants/medicate-assistant.js"
+    }
+]

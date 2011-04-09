@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wwonbg { background:url(../images/wwon_background.jpg) left top repeat-x; width: 32em; background-color:#75a1c6; }
+.wwon-clouds { background: url(../images/wwon_cloud.png) left top repeat; }
+.wwon-head { position:relative; top:0em; left:0em; background: url(../images/wwon_head.png) 4em 14.6em no-repeat; }
+.wwon-logo { position:relative; background: url(../images/wwon_logo.png) no-repeat;	left:.3em; top:14em; width:32em; height:14.5em; }
+.wwon-baloon{ border-width: 2.9em; -webkit-border-image: url(../images/cloud_pill.png) 29 repeat; -moz-border-image: url(../images/cloud_pill.png) 29 repeat; -o-border-image: url(../images/cloud_pill.png) 29 repeat; border-image: url(../images/cloud_pill.png) 29 repeat; color:#333; padding:0; margin:0.8em 0 0 .7em; width:24.8em; }
+.wwon-baloon h1{ font-size:2em; margin:0; padding:0; line-height:1em; }
+.wwon-baloon h2{ font-size:1.8em; margin:0; padding:0; line-height:1em; }
+.wwon-baloon p{ font-size:1.6em; line-height:1.2em; padding:0; margin:.5em 0 0; }
+.wwon-baloon form{ font-size:1.6em; line-height:1.2em; padding:0; margin:.5em 0 0; }
+.snicon{ display:block; font-size:1em; width:4.8em; height:4.8em; padding:0; margin:1.5em 1.6em 0; float:left; }
+.othericon{ display:block; font-size:1em; width:4.8em; height:4.8em; padding:0; margin:1.5em .5em 0 0; float:left; }
+.identica{ background:url(../images/contact_icons.png) 0 -144px no-repeat; }
+.facebook{ background:url(../images/contact_icons.png) 0 -96px no-repeat; }
+.twitter{ background:url(../images/contact_icons.png) 0 -192px no-repeat; }
+.phone{ background:url(../images/contact_icons.png) 0 0px no-repeat; }
+.email{ background:url(../images/contact_icons.png) 0 -48px no-repeat; }
+.phone_text{ display:block; font-size:2em; font-weight:bold; color:#369; margin-top:1.1em; }

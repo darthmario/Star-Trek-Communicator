@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*GENERAL ITEMS*/
+.container { height:48em; }
+/*TROUGH ITEMS*/
+.trough-gradient-bg{ height:48em; }
+.trough-texture{ height:48em; }
+.trough-shadow{ height:47.2em; }
+/*TITLE SCREEN ITEMS*/
+.subtitle{ top:19.7em; }
+.main-menu{ top:31.3em; }
+.menu-row2{ top:5.4em; }
+.menu-row3{ top:10.7em; }
+/*COMMUNICATOR ITEMS*/
+.spinner-holder{ top:4.8em; }
+.communicator-dept-buttons{ top:28.3em; }
+.communicator-panel{ height:12.1em; top:34.6em; }
+.communicator-metal-texture{ height:12.1em; }
+.communicator-metal-shadow{ height:6em; }
+.communicator-speaker-holder{ top:.6em; }
+.communicator-speaker-shadow{ height:3em; }
+.communicator-grill{ top:2.2em; left:1.7em; width:7.5em; }
+.communicator-inner-shadow{ left:2.2em; height:5.2em; }
+.communicator-frame{ width:5.1em; height:5em; }
+.communicator-std-btn1{ top:3.2em; }
+.communicator-std-btn2{ top:3.2em; }
+.communicator-antenna{ height:48em; }
+/*TRICORDER ITEMS*/
+.tricorder-gradient-bg{ height:48em; }
+.tricorder-metal-texture{ height:48em; }
+.tricorder-metal-shadow{ height:38em; }
+.tricorder-screen-holder{ top:1.9em; }
+.tricorder-screen-cover{ top:1.9em; }
+.tricorder-button-holder{ top:27em; }
+.tricorder-std-btn2{ top:6.9em; }
+.tricorder-std-btn3{ top:13.8em; }
+.tricorder-dept-buttons{ top:26.5em; }
+.tricorder-button2{ top:6.9em; }
+.tricorder-button3{ top:13.9em; }
+.tricorder-speaker-holder{ top:30em; left:14.7em; }
+/*PHASER ITEMS*/
+.phaser-gradient-bg{ height:48em; }
+.phaser-shadow{ height:28em; }
+.phaser-metal{ height:18em; }
+.phaser-bg-shadow{ top:21.9em; }
+.phaser-dial-holder{ top:28.5em; }
+.phaser-dept-buttons{ top:34.2em; }
+.phaser-numbers-holder{ top:28.5em; }
+/*MEDICAL ITEMS*/
+.medical-background{ height:48em; }
+.medical-glass-front{ top:2.1em; }
+.medical-glass-back{ top:2.1em; }
+.medical-spinner-back{ top:2.9em; }
+.medical-glass-top{ top:2em; }
+.medical-spinner-post{ top:10.7em; }
+.medical-spinner-front{ top:2.1em; }
+.medical-body{ height:25.8em; top:21.2em; }
+.medical-std-btn{ top:31.4em; }

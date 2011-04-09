@@ -1,0 +1,9 @@
+{
+	"id": "com.worldofnatecom.startrekcommunicator",
+	"version": "1.5.0",
+	"vendor": "worldofnate.com",
+	"type": "web",
+	"main": "index.html",
+	"title": "Star Trek Communicator",
+	"icon": "icon.png"
+}

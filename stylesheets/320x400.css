@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*GENERAL ITEMS*/
+.container { height:40em; }
+/*TROUGH ITEMS*/
+.trough-gradient-bg{ height:40em; }
+.trough-texture{ height:40em; }
+.trough-shadow{ height:39.2em; }
+/*TITLE SCREEN ITEMS*/
+.subtitle{ top:18.8em; }
+.main-menu{ top:28.4em; }
+.menu-row2{ top:4em; }
+.menu-row3{ top:8em; }
+/*COMMUNICATOR ITEMS*/
+.spinner-holder{ top:2.1em; }
+.communicator-dept-buttons{ top:24.4em; }
+.communicator-panel{ height:8.1em; top:30.6em; }
+.communicator-metal-texture{ height:8.1em; }
+.communicator-metal-shadow{ height:2em; }
+.communicator-speaker-holder{ top:-.8em; }
+.communicator-speaker-shadow{ height:2em; }
+.communicator-grill{ top:1.7em; left:2.1em; width:6.4em; }
+.communicator-inner-shadow{ left:2em; height:4.3em; }
+.communicator-frame{ width:5em; height:4em; }
+.communicator-std-btn1{ top:1.3em; }
+.communicator-std-btn2{ top:1.3em; }
+.communicator-antenna{ height:40em; }
+/*TRICORDER ITEMS*/
+.tricorder-gradient-bg{ height:40em; }
+.tricorder-metal-texture{ height:40em; }
+.tricorder-metal-shadow{ height:30em; }
+.tricorder-screen-holder{ top:1em; }
+.tricorder-screen-cover{ top:1em; }
+.tricorder-button-holder{ top:24em; }
+.tricorder-std-btn2{ top:5.4em; }
+.tricorder-std-btn3{ top:10.8em; }
+.tricorder-dept-buttons{ top:23.5em; }
+.tricorder-button2{ top:5.4em; }
+.tricorder-button3{ top:10.9em; }
+.tricorder-speaker-holder{ top:25.5em; left:15.5em; }
+/*PHASER ITEMS*/
+.phaser-gradient-bg{ height:40em; }
+.phaser-shadow{ height:20em; }
+.phaser-metal{ height:13.5em; }
+.phaser-bg-shadow{ top:17.4em; }
+.phaser-dial-holder{ top:22.5em; }
+.phaser-dept-buttons{ top:28.5em; }
+.phaser-numbers-holder{ top:22.5em; }
+/*MEDICAL ITEMS*/
+.medical-background{ height:40em; }
+.medical-glass-front{ top:0em; }
+.medical-glass-back{ top:0.1em; }
+.medical-spinner-back{ top:0.9em; }
+.medical-glass-top{ top:0em; }
+.medical-spinner-post{ top:8.7em; }
+.medical-spinner-front{ top:0em; }
+.medical-body{ height:22.8em; top:17.2em; }
+.medical-std-btn{ top:28em; }

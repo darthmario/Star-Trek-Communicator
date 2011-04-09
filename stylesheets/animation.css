@@ -1,0 +1,13 @@
+@charset "utf-8"; 
+/* title screen */
+.logo-beam-pattern{ -webkit-transition: background-position 5s linear; }
+.logo-beam-pattern-holder{ opacity:0; -webkit-transition: opacity 2s linear; }
+.logo-glow{ opacity:0; -webkit-transition: opacity 2s linear; }
+.logo{ opacity:0; -webkit-transition: opacity 2s linear; -webkit-transition-delay: 2.5s; }
+.logo-glow-fade{ opacity:1; -webkit-transition: opacity 2s linear; -webkit-transition-delay: 2.5s; }
+.wwon-clouds { -webkit-transition: background-position 500s linear; }
+.wwon-logo { -webkit-transform: scale(0); -webkit-transition: all 1s ease-out; -webkit-transition-delay: 1s; }
+.thanks-box { -webkit-transform: scale(0); -webkit-transition: all 1s ease-out; -webkit-transition-delay: 1.5s; }
+.communicator-antenna { -webkit-transition-property: -webkit-transform; -webkit-transition-duration: .5s; -webkit-transition-timing-function: ease-in-out; -webkit-transform-origin: center top; -webkit-transform: scaley(1); }
+.spinner-pattern{	-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 3s; -webkit-transition-timing-function: linear; -webkit-transform: rotate(0deg); -webkit-transform-origin: center center;}
+.tricorder-screen-changer{ opacity:0; -webkit-transition: opacity 1s linear; }
