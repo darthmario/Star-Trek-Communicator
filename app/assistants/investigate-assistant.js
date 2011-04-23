@@ -81,7 +81,6 @@ InvestigateAssistant.prototype.setup = function() {
 	this.screenBG = this.controller.get("screenBG");
 	this.screenFG = this.controller.get("screenFG");
 	this.screenFG.style.backgroundPositionY = "-226px";
-	this.screenChangerTimer = this.investigateHolder.setInterval(this.screenChanger.bind(this), 2500);
 	
 	this.playAudioHandler = this.playAudio.bind(this);
 	this.appOpenHandler = this.appOpen.bind(this);
@@ -97,6 +96,7 @@ InvestigateAssistant.prototype.setup = function() {
 InvestigateAssistant.prototype.activate = function(event) {
 	/* put in event handlers here that should only be in effect when this scene is active. For
 	   example, key handlers that are observing the document */
+	this.screenChangerTimer = this.investigateHolder.setInterval(this.screenChanger.bind(this), 2500);
 	Mojo.Event.listen(this.screenButton, "mousedown", this.appOpenHandler);
 	Mojo.Event.listen(this.button1, "mousedown", this.playAudioHandler);
 	Mojo.Event.listen(this.button2, "mousedown", this.playAudioHandler);
@@ -109,6 +109,7 @@ InvestigateAssistant.prototype.activate = function(event) {
 InvestigateAssistant.prototype.deactivate = function(event) {
 	/* remove any event handlers you added in activate and do any other cleanup that should happen before
 	   this scene is popped or another scene is pushed on top */
+	clearInterval(this.screenChangerTimer);
 	Mojo.Event.stopListening(this.screenButton, "mousedown", this.appOpenHandler);
 	Mojo.Event.stopListening(this.button1, "mousedown", this.playAudioHandler);
 	Mojo.Event.stopListening(this.button2, "mousedown", this.playAudioHandler);
@@ -117,7 +118,6 @@ InvestigateAssistant.prototype.deactivate = function(event) {
 	Mojo.Event.stopListening(this.button5, "mousedown", this.playAudioHandler);
 	Mojo.Event.stopListening(this.button6, "mousedown", this.playAudioHandler);
 	this.buttonAudio.pause();
-	clearInterval(this.screenChangerTimer);
 
 };
 
