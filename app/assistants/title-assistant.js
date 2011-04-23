@@ -35,6 +35,10 @@ TitleAssistant.prototype.beamInOut = function(){
 	this.controller.get("beamGlowFade").style.opacity = "0";
 }
 
+TitleAssistant.prototype.stopAudio = function(){
+	this.buttonAudio.pause();
+}
+
 
 TitleAssistant.prototype.setup = function() {
 	/* this function is for setup tasks that have to happen when the scene is first created */
@@ -47,9 +51,11 @@ TitleAssistant.prototype.setup = function() {
 	this.investigateButton = this.controller.get("investigateButton");
 	this.medicateButton = this.controller.get("medicateButton");
 	this.helpButton = this.controller.get("helpButton");
+	this.logoAudioButton = this.controller.get("logoAudioButton");
 
 	this.beamInOutHandler = this.beamInOut.bind(this);
 	this.startButtonPressHandler = this.startButtonPress.bind(this);
+	this.stopAudioHandler = this.stopAudio.bind(this);
 
 	this.buttonAudio.src = Mojo.appPath + "/audio/transporter/transporter.mp3";
 	this.buttonAudio.load();
@@ -61,6 +67,7 @@ TitleAssistant.prototype.setup = function() {
 TitleAssistant.prototype.activate = function(event) {
 	/* put in event handlers here that should only be in effect when this scene is active. For
 	   example, key handlers that are observing the document */
+	Mojo.Event.listen(this.logoAudioButton, "mousedown", this.stopAudioHandler);
 	Mojo.Event.listen(this.communicateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.listen(this.eliminateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.listen(this.investigateButton, "mousedown", this.startButtonPressHandler);
@@ -71,11 +78,13 @@ TitleAssistant.prototype.activate = function(event) {
 TitleAssistant.prototype.deactivate = function(event) {
 	/* remove any event handlers you added in activate and do any other cleanup that should happen before
 	   this scene is popped or another scene is pushed on top */
+	Mojo.Event.stopListening(this.logoAudioButton, "mousedown", this.stopAudioHandler);
 	Mojo.Event.stopListening(this.communicateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.stopListening(this.eliminateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.stopListening(this.investigateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.stopListening(this.medicateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.stopListening(this.helpButton, "mousedown", this.startButtonPressHandler);
+	this.buttonAudio.pause();
 };
 
 TitleAssistant.prototype.cleanup = function(event) {

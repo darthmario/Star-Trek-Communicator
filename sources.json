@@ -25,5 +25,9 @@
     {
         "scenes": "medicate",
         "source": "app/assistants/medicate-assistant.js"
+    },
+    {
+        "scenes": "dashboard",
+        "source": "app/assistants/dashboard-assistant.js"
     }
 ]

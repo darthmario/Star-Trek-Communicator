@@ -7,8 +7,11 @@ function EliminateAssistant() {
 EliminateAssistant.prototype.dialStart = function (event) {
 	//lets find out where we are
 	this.startMouse = event.clientY;
-	this.buttonAudio.load();	
-	this.buttonAudio.play();	
+	this.buttonAudio.load();
+	if(this.buttonClicks == 1){
+		this.buttonAudio.play();
+		this.buttonClicksPlaying = 1;
+	}
 	if(this.newLine !=7){
 		this.effectsAudio.pause();
 	}
@@ -18,6 +21,7 @@ EliminateAssistant.prototype.dialStart = function (event) {
 EliminateAssistant.prototype.dialStop = function () {
 	//stop everything that might have started on mouse down
 	this.buttonAudio.pause();	
+	this.buttonClicksPlaying = 0;
 	if(this.currentLine != this.newLine){
 		this.effectsAudio.src = Mojo.appPath + "/audio/phaser/"+this.newLine+".mp3";
 		this.effectsAudio.load();
@@ -56,6 +60,16 @@ EliminateAssistant.prototype.dialPosition = function (event) {
 			this.phaserNumber.style.backgroundPositionY = (this.dialNumberPosition + this.mouseDiff) + "px";		
 			this.backDial.style.backgroundPositionY = (this.dialNumberPosition - this.mouseDiff) + "px";
 		}
+		this.buttonClicks = 1;
+		if(this.buttonClicksPlaying == 0){
+			this.buttonClicksPlaying = 1;
+			this.buttonAudio.load();
+			this.buttonAudio.play();
+		}
+	} else {
+		this.buttonClicksPlaying = 0;
+		this.buttonClicks = 0;	
+		this.buttonAudio.pause();
 	}
 };
 
@@ -87,6 +101,8 @@ EliminateAssistant.prototype.setup = function() {
 	this.finalPosition = -570;
 	this.currentLine = 0;
 	this.newLine = 1;
+	this.buttonClicks = 1;
+	this.buttonClicksPlaying = 0;
 
 	//audio
 	this.buttonAudio = this.titleScreen.controller.get("buttonAudio");

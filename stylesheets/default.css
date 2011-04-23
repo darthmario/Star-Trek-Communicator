@@ -63,7 +63,7 @@ body,td,th { font-size: 10px; }
 /*TRICORDER ITEMS*/
 .tricorder-gradient-bg{ background:url(../images/metal_bg.png); width:32em; top:0; left:0; position:absolute; }
 .tricorder-metal-texture{ background:url(../images/metal_texture.png); width:32em; position:absolute; }
-.tricorder-metal-shadow{ width:16em; position:absolute; border-width: 5em 8em; -webkit-border-image: url(../images/tricorder_full_shadow.png) 31 repeat; -moz-border-image: url(../images/tricorder_full_shadow.png) 31 repeat; -o-border-image: url(../images/tricorder_full_shadow.png) 31 repeat; border-image: url(../images/tricorder_full_shadow.png) 31 repeat; opacity:.6; }
+.tricorder-metal-shadow{ width:25.8em; position:absolute; border-width: 3.1em 3.1em; -webkit-border-image: url(../images/tricorder_full_shadow.png) 31 repeat; opacity:.6; }
 .tricorder-screen-holder{ position:absolute; left:5.3em; width:21.6em; height:22.6em; background:url(../images/solid_sprites.jpg) -37px 0px; }
 .tricorder-screen-cover{ position:absolute; left:5.3em; width:21.6em; height:22.6em; background:url(../images/communicator_sprites.png) -632px -471px no-repeat; }
 .tricorder-button-holder{ position:absolute; left:2.5em; }
@@ -76,7 +76,9 @@ body,td,th { font-size: 10px; }
 .tricorder-speaker-shadow{ position:absolute; width:7.2em; height:5em; border-width: 4em 4.4em; -webkit-border-image: url(../images/speaker-shadow.png) 40 44 repeat; opacity:.2; }
 .tricorder-grill{ position:absolute; top:1.6em; left:2.2em; width:11.6em; height:9.5em; background:url(../images/radio_screen.png); }
 .tricorder-speaker-darken{ position:absolute; top:1.6em; left:2.2em; width:11.6em; height:9.5em; background-color:#000; opacity:.1; }
-.tricorder-inner-shadow{ position:absolute; top:1.6em; left:2.2em; width:5.1em; height:4em; border-width: 2.5em 4.4em 3em 2.2em; -webkit-border-image: url(../images/speaker-inner-shadow.png) 12 11 repeat; }
+
+.tricorder-inner-shadow{ position:absolute; top:1.6em; left:2.2em; width:9.4em; height:7.1em; border-width: 1.2em 1.1em; -webkit-border-image: url(../images/speaker-inner-shadow.png) 12 11 repeat; }
+
 .tricorder-frame{ position:absolute; top:1.6em; left:2.2em; width:10.3em; height:6.9em; border-width: 1.3em
 .7em; -webkit-border-image: url(../images/speaker_rim.png) 13 7 repeat;  }
 /*PHASER ITEMS*/
@@ -88,9 +90,10 @@ body,td,th { font-size: 10px; }
 .phaser-dial-shadow{ position:absolute; width:1.3em; height:11.3em; border-width: 3em; -webkit-border-image: url(../images/phaser_cover_shadow.png) 30 repeat; -moz-border-image: url(../images/phaser_cover_shadow.png) 30 repeat; -o-border-image: url(../images/phaser_cover_shadow.png) 30 repeat; border-image: url(../images/phaser_cover_shadow.png) 30 repeat; opacity:0.61; }
 .phaser-dial{ position:absolute; top:1.8em; left:1.9em; width:3.4em; height:13.7em; background:url(../images/dial.jpg); }
 .phaser-dial-cover{ position:absolute; top:1.8em; left:1.8em; width:3.5em; height:13.7em; background:url(../images/communicator_sprites.png) -1256px -213px no-repeat; }
+.phaser-dial-button{ position:absolute; left:1em; top:1em; width:5.1em; height:15.3em;}
 .phaser-dept-buttons{ position:absolute; left:13.2em; }
 .phaser-numbers-holder{ position:absolute; left:21.5em; width:1.3em; height:11.3em; }
-.phaser-numbers{ position:absolute; top:1.8em; left:1.8em; width:3.7em; height:13.7em; background:url(../images/solid_sprites.jpg) 0px -570px; }
+.phaser-numbers{ position:absolute; top:1.8em; left:1.8em; width:3.7em; height:13.7em; background:url(../images/solid_sprites.jpg) 0px -530px; }
 .phaser-numbers-cover{ position:absolute; top:1.8em; left:1.8em; width:4.2em; height:13.7em; background:url(../images/communicator_sprites.png) -1253px -62px no-repeat; }
 /*MEDICAL ITEMS*/
 .medical-background{ position:absolute; width:32em; background-color:#1c1c1c; }
