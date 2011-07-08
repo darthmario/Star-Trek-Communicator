@@ -1,9 +1,10 @@
 {
 	"id": "com.worldofnatecom.startrekcommunicator",
-	"version": "1.5.1",
+	"version": "1.5.2",
 	"vendor": "worldofnate.com",
 	"type": "web",
 	"main": "index.html",
 	"title": "Star Trek Communicator",
-	"icon": "icon.png"
+	"icon": "icon.png",
+	"vendorurl": "http://www.worldofnate.com"
 }

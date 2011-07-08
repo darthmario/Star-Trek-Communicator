@@ -110,13 +110,13 @@ CommunicateAssistant.prototype.buttonPress = function(event){
 			this.lastButton = randomNumber;
 			this.character = Math.floor(Math.random() * (characters[event.target.id].length)); 
 			this.department = event.target.id;
-			if(department == this.lastDepartment){
-				while(character == this.lastCharacter){
-					character = Math.floor(Math.random() * (characters[event.target.id].length)); 
+			if(this.department == this.lastDepartment){
+				while(this.character == this.lastCharacter){
+					this.character = Math.floor(Math.random() * (characters[event.target.id].length)); 
 				}		
 			}
-			this.lastCharacter = character;
-			this.lastDepartment = department;
+			this.lastCharacter = this.character;
+			this.lastDepartment = this.department;
 		}
 		if ((event.target.id == "buttonNegative")|| (event.target.id == "buttonPositive")) {
 			var lastMessage = this.message;
