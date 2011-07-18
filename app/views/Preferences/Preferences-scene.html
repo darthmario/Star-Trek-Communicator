@@ -1,0 +1,207 @@
+<div class="palm-page-header">
+	<div class="palm-page-header-wrapper">
+		<div class="icon stc-mini-icon"></div>
+		<div class="title">Star Trek Communicator Preferences</div>             
+	</div>
+</div>
+
+<div class="palm-group">
+	<div class="palm-group-title"><span>General Settings</span></div>
+	<div class="palm-list">
+		<div class="palm-row single">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="ToggleButton" id="titleAudioToggle"></div>
+				<div class="title left">Title Screen Audio</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-group">
+	<div class="palm-group-title"><span>Characters</span></div>
+	<div class="palm-list">
+		<!--Start Department1-->
+		<div class="palm-row no-separator">
+			<div class="palm-row-wrapper">
+				<div style="font-size:1.4em; color:#733; padding: 0.5em 1em 0em 1em;">Note: You must have one character from each department set to "On"</div>
+			</div>
+		</div>
+		<div class="palm-row first drawer-button" id="department1">
+			<div class="palm-row-wrapper">
+				<div class="title">Command & Helm</div>
+			</div>
+		</div>
+		<!--Start Character List-->
+		<div class="drawer" x-mojo-element="Drawer" id="department1Drawer">
+			<!-- Start First Character -->
+			<div class="palm-row first drawer-button" id="uhura">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="uhuraAudioToggle"></div>
+					<div class="title left" x-mojo-loc="">Nyota Uhura</div>
+				</div>
+			</div>	
+			<!--Start Audio List-->
+			<div class="drawer" x-mojo-element="Drawer" id="uhuraAudioDrawer">
+				<!-- Start First Character -->
+				<div class="palm-row first">
+					<div class="palm-row-wrapper">
+						<div class="title left" x-mojo-loc="">Greeting</div>
+					</div>
+				</div>
+				<!-- End First Character -->
+				<!-- Start Second Character -->
+				<div class="palm-row">
+					<div class="palm-row-wrapper">
+						<div class="title" x-mojo-loc="">Positive Responses</div>
+					</div>
+				</div>
+				<!-- End Second Character -->
+				<!-- Start Third Character -->
+				<div class="palm-row last">
+					<div class="palm-row-wrapper">
+					<div class="title" x-mojo-loc="">Negative Responses</div>
+					</div>
+				</div>
+				<!-- End Third Character -->
+			</div>	
+			<!-- End First Character -->
+			
+			<!-- Start Second Character -->
+			<div class="palm-row drawer-button" id="chekov">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="chekovAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Pavel Chekov</div>
+				</div>
+			</div>
+			<!-- End Second Character -->
+			
+			<!-- Start Third Character -->
+			<div class="palm-row drawer-button" id="pike">
+				<div class="palm-row-wrapper">
+						<div x-mojo-element="ToggleButton" id="pikeAudioToggle"></div>
+				<div class="title" x-mojo-loc="">Captain Pike</div>
+				</div>
+			</div>
+			<!-- End Third Character -->
+			
+			<!-- Start Fourth Character -->
+			<div class="palm-row last drawer-button" id="guardian">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="guardianAudioToggle"></div>
+					<div class="title" x-mojo-loc="">The Guardian of Forever</div>
+				</div>
+			</div>
+			<!-- End Fourth Character -->
+
+		</div>
+		<!--End Character List-->
+		<!--End Department1-->
+		
+		<!--Start Department2-->
+		<div class="palm-row drawer-button" id="department2">
+			<div class="palm-row-wrapper">
+				<div class="title">Operations, Engineering & Security</div>
+			</div>
+		</div>
+		<!--Start Character List-->
+		<div class="drawer" x-mojo-element="Drawer" id="department2Drawer">
+			<!-- Start First Character -->
+			<div class="palm-row first drawer-button" id="sulu">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="suluAudioToggle"></div>
+					<div class="title left" x-mojo-loc="">Hikaru Sulu</div>
+				</div>
+			</div>
+			<!-- End First Character -->
+			
+			<!-- Start Second Character -->
+			<div class="palm-row drawer-button" id="scotty">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="scottyAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Montgomery Scott</div>
+				</div>
+			</div>
+			<!-- End Second Character -->
+			
+			<!-- Start Third Character -->
+			<div class="palm-row drawer-button" id="nomad">
+				<div class="palm-row-wrapper">
+						<div x-mojo-element="ToggleButton" id="nomadAudioToggle"></div>
+				<div class="title" x-mojo-loc="">Nomad</div>
+				</div>
+			</div>
+			<!-- End Third Character -->
+			
+			<!-- Start Fourth Character -->
+			<div class="palm-row last drawer-button" id="zephram">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="zephramAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Zefram Cochrane</div>
+				</div>
+			</div>
+			<!-- End Fourth Character -->
+
+		</div>
+		<!--End Character List-->
+		<!--End Department2-->
+		
+		<!--Start Department3-->
+		<div class="palm-row last drawer-button" id="department3">
+			<div class="palm-row-wrapper">
+				<div class="title">Science & Medical</div>
+			</div>
+		</div>
+		<!--Start Character List-->
+		<div class="drawer" x-mojo-element="Drawer" id="department3Drawer">
+			<!-- Start First Character -->
+			<div class="palm-row first drawer-button" id="bones">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="bonesAudioToggle"></div>
+					<div class="title left" x-mojo-loc="">Leonard McCoy</div>
+				</div>
+			</div>
+			<!-- End First Character -->
+			
+			<!-- Start Second Character -->
+			<div class="palm-row drawer-button" id="spock">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="spockAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Spock</div>
+				</div>
+			</div>
+			<!-- End Second Character -->
+			
+			<!-- Start Third Character -->
+			<div class="palm-row drawer-button" id="computer">
+				<div class="palm-row-wrapper">
+						<div x-mojo-element="ToggleButton" id="computerAudioToggle"></div>
+				<div class="title" x-mojo-loc="">Computer</div>
+				</div>
+			</div>
+			<!-- End Third Character -->
+			
+			<!-- Start Fourth Character -->
+			<div class="palm-row drawer-button" id="sarek">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="sarekAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Sarek</div>
+				</div>
+			</div>
+			<!-- End Fourth Character -->
+			
+			<!-- Start Fourth Character -->
+			<div class="palm-row last drawer-button" id="chapel">
+				<div class="palm-row-wrapper">
+					<div x-mojo-element="ToggleButton" id="chapelAudioToggle"></div>
+					<div class="title" x-mojo-loc="">Christine Chapel</div>
+				</div>
+			</div>
+			<!-- End Fourth Character -->
+
+
+		</div>
+		<!--End Character List-->
+		<!--End Department3-->
+		
+	</div>
+</div>

@@ -29,5 +29,9 @@
     {
         "scenes": "dashboard",
         "source": "app/assistants/dashboard-assistant.js"
+    },
+    {
+        "scenes": "Preferences",
+        "source": "app/assistants/Preferences-assistant.js"
     }
 ]
