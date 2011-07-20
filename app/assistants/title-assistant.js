@@ -20,6 +20,9 @@ TitleAssistant.prototype.startButtonPress = function(event){
 	if (eventTarget == "medicateButton") {
 		this.controller.stageController.pushScene("medicate");
 	}
+	if (eventTarget == "settingsButton") {
+		this.controller.stageController.pushScene("Preferences");
+	}
 	if (eventTarget == "helpButton") {
 		this.controller.stageController.pushScene("help");
 	}
@@ -27,7 +30,9 @@ TitleAssistant.prototype.startButtonPress = function(event){
 
 TitleAssistant.prototype.beamInOut = function(){
 	Mojo.Event.stopListening(this.buttonAudio, "canplay", this.beamInOutHandler);
-	this.buttonAudio.play();
+	if(this.titleToggle==true){
+		this.buttonAudio.play();	
+	}
 	this.controller.get("appTitle").style.opacity = "1";
 	this.controller.get("beamTextureHolder").style.opacity = "1";
 	this.controller.get("beamTexture").style.backgroundPosition = " -150px -100px";
@@ -41,6 +46,17 @@ TitleAssistant.prototype.stopAudio = function(){
 
 
 TitleAssistant.prototype.setup = function() {
+	//check to see if the audio is set in the cookie
+	//Read theme cookie or default info
+	this.stComcookie = new Mojo.Model.Cookie('stCom');
+	this.stComPrefs = this.stComcookie.get();
+	if(this.stComPrefs) {
+		this.titleToggle = this.stComPrefs.titleToggle;
+	} else {
+		//In this case, the cookie doesn't exist
+		this.titleToggle = true;
+	}
+
 	/* this function is for setup tasks that have to happen when the scene is first created */
 	this.controller.enableFullScreenMode(true);
 	/* use Mojo.View.render to render view templates and add them to the scene, if needed */
@@ -50,6 +66,7 @@ TitleAssistant.prototype.setup = function() {
 	this.eliminateButton = this.controller.get("eliminateButton");
 	this.investigateButton = this.controller.get("investigateButton");
 	this.medicateButton = this.controller.get("medicateButton");
+	this.settingsButton = this.controller.get("settingsButton");
 	this.helpButton = this.controller.get("helpButton");
 	this.logoAudioButton = this.controller.get("logoAudioButton");
 
@@ -72,6 +89,7 @@ TitleAssistant.prototype.activate = function(event) {
 	Mojo.Event.listen(this.eliminateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.listen(this.investigateButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.listen(this.medicateButton, "mousedown", this.startButtonPressHandler);
+	Mojo.Event.listen(this.settingsButton, "mousedown", this.startButtonPressHandler);
 	Mojo.Event.listen(this.helpButton, "mousedown", this.startButtonPressHandler);
 };
 

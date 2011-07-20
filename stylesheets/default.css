@@ -38,7 +38,8 @@ body,td,th { font-size: 10px; }
 .menu-eliminate{ width:11em; height:2.3em; background:url(../images/communicator_sprites.png) -701px -73px no-repeat; }
 .menu-investigate{ width:13em; height:2.7em; background:url(../images/communicator_sprites.png) -701px -46px no-repeat; }
 .menu-medicate{ width:11.3em; height:2.3em; background:url(../images/communicator_sprites.png) -701px -23px no-repeat; }
-.menu-help{ width:20.2em; height:2.7em; background:url(../images/communicator_sprites.png) -701px -96px no-repeat; }
+.menu-settings{ width:10.5em; height:2.7em; background:url(../images/communicator_sprites.png) -701px -96px no-repeat; }
+.menu-help{ width:11.5em; height:2.7em; background:url(../images/communicator_sprites.png) -2px -760px no-repeat; }
 /*COMMUNICATOR ITEMS*/
 .spinner-holder{ position:absolute; width:22.2em; height:22.2em; left:5.1em; overflow:hidden;}
 .spinner-bg{ position:absolute; top:1.1em; left:0.1em; width:22.2em; height:22.2em; overflow:hidden; background:url(../images/communicator_sprites.png) -190px -542px no-repeat; }

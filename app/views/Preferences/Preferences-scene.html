@@ -42,28 +42,36 @@
 			</div>	
 			<!--Start Audio List-->
 			<div class="drawer" x-mojo-element="Drawer" id="uhuraAudioDrawer">
-				<!-- Start First Character -->
+				<!-- Start Hello -->
 				<div class="palm-row first">
 					<div class="palm-row-wrapper">
-						<div class="title left" x-mojo-loc="">Greeting</div>
+						<div class="title" x-mojo-loc="">Greeting</div>
+						<div x-mojo-element="Button" id="uhura_hello" class="buttonClass" style="width:7.5em;"></div>
+						<div style="height:.5em; float:none; clear:both"></div>
 					</div>
 				</div>
-				<!-- End First Character -->
-				<!-- Start Second Character -->
+				<!-- End Hello -->
+				<!-- Start Positive -->
 				<div class="palm-row">
 					<div class="palm-row-wrapper">
 						<div class="title" x-mojo-loc="">Positive Responses</div>
-					</div>
+						<div id="uhuraPositiveButtons" x-mojo-element="List"></div>
+						<div style="height:.5em; float:none; clear:both"></div>
 				</div>
-				<!-- End Second Character -->
-				<!-- Start Third Character -->
+				</div>
+				<!-- End Positive -->
+				<!-- Start Negative -->
 				<div class="palm-row last">
 					<div class="palm-row-wrapper">
-					<div class="title" x-mojo-loc="">Negative Responses</div>
-					</div>
+						<div class="title" x-mojo-loc="">Negative Responses</div>
+						<input type="button" id="positive1" value="normal button">
+						<div x-mojo-element="Button" id="uhura_negative_1" class="buttonClass" style="width:7.5em; float:left;"></div>
+						<div style="height:.5em; float:none; clear:both"></div>
 				</div>
-				<!-- End Third Character -->
+				</div>
+				<!-- End Negative -->
 			</div>	
+			<!-- End Audio List-->
 			<!-- End First Character -->
 			
 			<!-- Start Second Character -->
@@ -88,7 +96,7 @@
 			<div class="palm-row last drawer-button" id="guardian">
 				<div class="palm-row-wrapper">
 					<div x-mojo-element="ToggleButton" id="guardianAudioToggle"></div>
-					<div class="title" x-mojo-loc="">The Guardian of Forever</div>
+					<div class="title" x-mojo-loc="">Guardian of Forever</div>
 				</div>
 			</div>
 			<!-- End Fourth Character -->

@@ -11,5 +11,5 @@ StageAssistant.prototype.setup = function() {
 		this.controller.loadStylesheet(['./stylesheets/320x480.css']);
 	}
 	
-	this.controller.pushScene("Preferences");
+	this.controller.pushScene("title");
 };
